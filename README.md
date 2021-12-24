@@ -1,6 +1,10 @@
-
-_TODO_ ESM demo for [shadow-cljs](https://github.com/thheller/shadow-cljs)
+ClojureScript in Parcel Web App
 ----
+
+This project demonstrates how to include ClojureScript in a Parcel based app.
+
+This project also demonstrates how to export and utilize ClojureScript 
+functions and components from typescript. 
 
 ### Develop
 
@@ -12,7 +16,7 @@ yarn shadow-cljs watch app
 yarn parcel index.html
 ```
 
-shadow-cljs reloading appears to work but I do notice some already defined errors on reload, but they do not appear to create any issues.
+shadow-cljs reloading appears to work fine but I have occassionally notice some already defined errors on reload, but seem safe to ignore
 
 ```
 cljs_env.js:110 Uncaught Error: Namespace "goog.html.SafeStyleSheet" already declared.
