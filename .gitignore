@@ -1,9 +1,9 @@
-
-/target
 /node_modules
-/yarn.lock
-/package-lock.json
+/target
+/dist
 /*.log
-.shadow-cljs/
-
-.nrepl-port
+/.shadow-cljs/
+/.clj-kondo/
+/.lsp/
+/.parcel-cache/
+/.nrepl-port

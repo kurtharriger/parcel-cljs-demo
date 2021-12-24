@@ -1,7 +1,6 @@
 
 {:source-paths ["src"]
  :dependencies []
- :dev-http {8080 "target/"}
  :builds {:app {:output-dir "target/"
                 :target :esm
                 :asset-path "."

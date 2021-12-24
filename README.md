@@ -8,13 +8,10 @@ Run in development:
 
 ```bash
 yarn
-(mkdir -p target && cp assets/index.html target/)
-yarn shadow-cljs watch app
+yarn shadow-cljs watch app 
+yarn parcel index.html
 ```
 
-`shadow-cljs` will be installed in `node_modules/` when you run `yarn`.
-
-`:dev-http` specifies that `target/` will be served at http://localhost:8080 .
 
 ### REPL
 
@@ -30,8 +27,6 @@ Compile with optimizations with `release` sub-command:
 
 ```bash
 yarn shadow-cljs release app
-mkdir -p target && cp assets/index.html target/
-yarn serve # serving target/ on http://localhost:8080
 ```
 
 Read docs for more http://doc.shadow-cljs.org/ .
