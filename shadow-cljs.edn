@@ -7,4 +7,7 @@
  :builds {:app {:output-dir "target/"
                 :target :esm
                 :asset-path "."
-                :modules {:cljs {:init-fn app.main/main!}}}}}
+                ; note initfn will be run on import
+                ; expots 
+                :modules {:cljs {:init-fn app.main/main!
+                                 :exports {greeting app.main/greeting}}}}}}

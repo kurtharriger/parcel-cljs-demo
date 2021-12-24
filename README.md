@@ -31,6 +31,16 @@ yarn shadow-cljs release app
 
 Read docs for more http://doc.shadow-cljs.org/ .
 
+
+## References 
+
+* Generating ES Modules with shadow-cljs
+ https://clojureverse.org/t/generating-es-modules-browser-deno/6116
+
+* External modules in parcel
+https://www.npmjs.com/package/parcel-plugin-externals
+https://github.com/parcel-bundler/parcel/issues/144
+
 ### License
 
 MIT

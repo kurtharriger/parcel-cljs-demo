@@ -29,6 +29,6 @@
     "cljs"
   ],
   "alias": {
-    "cljs": "./target/main"
+    "cljs": "./target/cljs.js"
   }
 }

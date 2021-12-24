@@ -27,3 +27,8 @@
 (defn ^:dev/after-load reload! []
   (println "[main] reloaded lib:" lib/c lib/d)
   (println "[main] reloaded:" a b))
+
+
+(defn greeting [user]
+  (str "Hello, " user ".  Typescript used clojurescript to send you this greeting")
+  )
