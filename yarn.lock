@@ -2756,7 +2756,7 @@ jake@^10.6.1:
     filelist "^1.0.1"
     minimatch "^3.0.4"
 
-js-tokens@^4.0.0:
+"js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://artifacts.werally.in/artifactory/api/npm/npm/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha1-GSA/tZmR35jjoocFDUZHzerzJJk=
@@ -2927,6 +2927,13 @@ log-symbols@^4.1.0:
   dependencies:
     chalk "^4.1.0"
     is-unicode-supported "^0.1.0"
+
+loose-envify@^1.1.0:
+  version "1.4.0"
+  resolved "https://artifacts.werally.in/artifactory/api/npm/npm/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
+  integrity sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=
+  dependencies:
+    js-tokens "^3.0.0 || ^4.0.0"
 
 lowlight@~1.17.0:
   version "1.17.0"
@@ -3275,6 +3282,11 @@ pako@~1.0.5:
   version "1.0.11"
   resolved "https://artifacts.werally.in/artifactory/api/npm/npm/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
   integrity sha1-bJWZ00DVTf05RjgCUqNXBaa5kr8=
+
+parcel-plugin-externals@^0.5.2:
+  version "0.5.2"
+  resolved "https://artifacts.werally.in/artifactory/api/npm/npm/parcel-plugin-externals/-/parcel-plugin-externals-0.5.2.tgz#581402610746f1a60d0a4399328d4ad096db6348"
+  integrity sha1-WBQCYQdG8aYNCkOZMo1K0JbbY0g=
 
 parcel@^2.0.1:
   version "2.0.1"
@@ -3879,10 +3891,27 @@ range-parser@1.2.0:
   resolved "https://artifacts.werally.in/artifactory/api/npm/npm/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
   integrity sha1-9JvmtIeJTdxA3MlKMi9hEJLgDV4=
 
+react-dom@^17.0.2:
+  version "17.0.2"
+  resolved "https://artifacts.werally.in/artifactory/api/npm/npm/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
+  integrity sha1-7P+2hF462Nv83EmPDQqTlzZQLCM=
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    scheduler "^0.20.2"
+
 react-refresh@^0.9.0:
   version "0.9.0"
   resolved "https://artifacts.werally.in/artifactory/api/npm/npm/react-refresh/-/react-refresh-0.9.0.tgz#71863337adc3e5c2f8a6bfddd12ae3bfe32aafbf"
   integrity sha1-cYYzN63D5cL4pr/d0Srjv+Mqr78=
+
+react@^17.0.2:
+  version "17.0.2"
+  resolved "https://artifacts.werally.in/artifactory/api/npm/npm/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
+  integrity sha1-0LXMUW0p6z7uOD91tihkz7aAADc=
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 "readable-stream@1 || 2", readable-stream@^2.0.2, readable-stream@^2.3.3, readable-stream@^2.3.6:
   version "2.3.7"
@@ -4023,12 +4052,25 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   resolved "https://artifacts.werally.in/artifactory/api/npm/npm/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha1-RPoWGwGHuVSd2Eu5GAL5vYOFzWo=
 
+sakura.css@^1.3.1:
+  version "1.3.1"
+  resolved "https://artifacts.werally.in/artifactory/api/npm/npm/sakura.css/-/sakura.css-1.3.1.tgz#90f03dd20d6bd2500fc12a11e8105ce183c176e8"
+  integrity sha1-kPA90g1r0lAPwSoR6BBc4YPBdug=
+
 saxes@^3.1.9:
   version "3.1.11"
   resolved "https://artifacts.werally.in/artifactory/api/npm/npm/saxes/-/saxes-3.1.11.tgz#d59d1fd332ec92ad98a2e0b2ee644702384b1c5b"
   integrity sha1-1Z0f0zLskq2YouCy7mRHAjhLHFs=
   dependencies:
     xmlchars "^2.1.1"
+
+scheduler@^0.20.2:
+  version "0.20.2"
+  resolved "https://artifacts.werally.in/artifactory/api/npm/npm/scheduler/-/scheduler-0.20.2.tgz#4baee39436e34aa93b4874bddcbf0fe8b8b50e91"
+  integrity sha1-S67jlDbjSqk7SHS93L8P6Li1DpE=
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 secure-compare@3.0.1:
   version "3.0.1"
