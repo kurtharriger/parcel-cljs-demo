@@ -101,6 +101,8 @@ Read docs for more http://doc.shadow-cljs.org/ .
 https://www.npmjs.com/package/parcel-plugin-externals
 https://github.com/parcel-bundler/parcel/issues/144
 
+* ESM demo for shadow-cljs 
+https://github.com/minimal-xyz/minimal-shadow-cljs-esm
 ### License
 
 MIT

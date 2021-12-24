@@ -1,5 +1,5 @@
 {
-  "name": "minimal-shadow-cljs-browser",
+  "name": "parcel-cljs-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
