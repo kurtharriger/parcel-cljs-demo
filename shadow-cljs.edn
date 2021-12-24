@@ -1,6 +1,5 @@
 
 {:source-paths ["src/cljs"]
- :dev-http {8080 "target/"}
  :dependencies [[reagent "1.1.0"]
                 [cljsjs/react "17.0.2-0"]
                 [cljsjs/react-dom "17.0.2-0"]]

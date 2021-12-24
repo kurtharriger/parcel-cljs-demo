@@ -8,3 +8,5 @@
 /.parcel-cache/
 /.nrepl-port
 /.calva
+/.idea
+.DS_Store

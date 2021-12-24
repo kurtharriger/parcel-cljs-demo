@@ -6,17 +6,68 @@ This project demonstrates how to include ClojureScript in a Parcel based app.
 This project also demonstrates how to export and utilize ClojureScript 
 functions and components from typescript. 
 
+Currently, you must manually start the shadow-cljs compiler as a seperate process along side parcel as noted below.
+
+I expect that this manual step and the minimal shadow-cljs configuration can be provided by a parcel transformer.  This project is just a first step to demonstrate a workable configuration that can subsequently be automated.  
+
+ https://github.com/parcel-bundler/parcel/issues/1388 
+
+
+
+ 
+
+
+
 ### Develop
 
 Run in development:
 
 ```bash
-yarn
-yarn shadow-cljs watch app 
-yarn parcel index.html
+$ yarn
+
+yarn install v1.22.17
+[1/4] 🔍  Resolving packages...
+[2/4] 🚚  Fetching packages...
+[3/4] 🔗  Linking dependencies...
+[4/4] 🔨  Building fresh packages...
+✨  Done in 11.28s.
+
+$ yarn shadow-cljs watch app  
+
+yarn run v1.22.17
+shadow-cljs - config: shadow-cljs.edn
+shadow-cljs - updating dependencies
+shadow-cljs - dependencies updated
+shadow-cljs - server version: 2.16.9 running at http://localhost:9630
+shadow-cljs - nREPL server started on port 55551
+shadow-cljs - watching build :app
+[:app] Configuring build.
+[:app] Compiling ...
+[:app] Build completed. (149 files, 147 compiled, 0 warnings, 15.12s)
+```
+In a second terminal
+```bash 
+
+$ yarn parcel index.html
+
+Server running at http://localhost:1234
+✨ Built in 2.58s
 ```
 
-shadow-cljs reloading appears to work fine but I have occassionally notice some already defined errors on reload, but seem safe to ignore
+Now open http://localhost:1234 in your browser.
+
+![](docs/screenshot.png)
+
+### REPL
+
+After page is loaded, you may also start a REPL connected to browser with:
+
+```bash
+yarn shadow-cljs cljs-repl app
+```
+
+# Notes: 
+shadow-cljs reloading appears to work fine but I have occassionally noticed some already defined errors on reload. These seem safe to ignore.
 
 ```
 cljs_env.js:110 Uncaught Error: Namespace "goog.html.SafeStyleSheet" already declared.
@@ -27,14 +78,6 @@ cljs_env.js:110 Uncaught Error: Namespace "goog.html.SafeStyleSheet" already dec
     at newRequire (index.5eecfe6e.js:71)
     at hmrAcceptRun (runtime-7a6b2432a1efc7e8.js:370)
     at WebSocket.ws.onmessage (runtime-7a6b2432a1efc7e8.js:127)
-```
-
-### REPL
-
-After page is loaded, you may also start a REPL connected to browser with:
-
-```bash
-yarn shadow-cljs cljs-repl app
 ```
 
 
