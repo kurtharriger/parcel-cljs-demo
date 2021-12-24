@@ -10,4 +10,5 @@
                 ; note initfn will be run on import
                 ; expots 
                 :modules {:cljs {:init-fn app.main/main!
-                                 :exports {greeting app.main/greeting}}}}}}
+                                 :exports {greeting app.main/greeting
+                                           App app.main/App}}}}}}
