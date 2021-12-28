@@ -1,6 +1,7 @@
 
 (ns app.main
   (:require [app.lib :as lib]
+            ["esm:../../src/ts/util.ts" :as ts]
             [reagent.core :as r]
             [reagent.dom :as rd]))
 
@@ -50,25 +51,21 @@ app.main=> (greeting \"World\")
 
 
 (defn ^:dev/after-load reload! []
-  (println "[main] reloaded lib:" lib/c lib/d)
   (println "[main] reloaded:"))
 
 
-(defn mountit []
+(defn mount! []
   (rd/render [app]
              (.getElementById js/document "app")))
 
 ;; shadow-cljs.edn will run main when specified as module init-fn
 (defn main! []
-  (println "[main]: loading")
-  ;(mountit)
+  (println "[main]: loading..." (lib/greeting "user"))
+  (ts/sayHi)
+  ;(mount!)
   )
 
-
 ;; exports
-;; currently any esm exports must be specified in 
-
-(defn ^:export greeting [user]
-  (str "Hello, " user ".  Clojurescript generated this message"))
+;; currently any esm exports must also be specified in shadow-cljs.edn
 
 (def ^:export App (r/reactify-component app))
