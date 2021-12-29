@@ -21,3 +21,7 @@ const Layout: React.FC = () =>
 
 const app = document.getElementById("app");
 ReactDOM.render(<Layout />, app);
+
+if (process.env.NODE_ENV === 'development') { 
+    require("../../target/shadow.cljs.devtools.client.browser.js") 
+}
