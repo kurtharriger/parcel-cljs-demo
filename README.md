@@ -89,6 +89,8 @@ yarn shadow-cljs release app
 Read docs for more http://doc.shadow-cljs.org/ .
 
 
+
+
 # Issues
 
 Based on feedback from shadow-cljs author I tried to change this to use :js-options {:js-provider :import} to 
@@ -111,8 +113,9 @@ https://github.com/parcel-bundler/parcel/issues/144
 * ESM demo for shadow-cljs 
 https://github.com/minimal-xyz/minimal-shadow-cljs-esm
 
+* Guide on using npm modules from clojurescript
+https://clojureverse.org/t/guide-on-how-to-use-import-npm-modules-packages-in-clojurescript/2298
 
-esm-error.png
 ### License
 
 MIT

@@ -1,8 +1,6 @@
 
 {:source-paths ["src/cljs"]
- :dependencies [[reagent "1.1.0"]
-                [cljsjs/react "17.0.2-0"]
-                [cljsjs/react-dom "17.0.2-0"]]
+ :dependencies [[reagent "1.1.0"]]
  :builds {:app {:output-dir "target/"
                 :target :npm-module
                 :js-options {:js-provider :import}
