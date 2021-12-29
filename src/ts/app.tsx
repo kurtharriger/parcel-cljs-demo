@@ -3,8 +3,8 @@ import 'sakura.css'
 
 import React from 'React'
 import ReactDOM from "react-dom";
-import {greeting}  from 'cljs-lib'
-import {App}  from 'cljs-main'
+import {greeting}  from 'cljs/app.lib'
+import {App}  from 'cljs/app.main'
 
 const Layout: React.FC = () => 
     (<>
