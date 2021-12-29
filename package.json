@@ -33,6 +33,6 @@
   "alias": {
     "cljs-main": "./target/app.main.js",
     "cljs-lib": "./target/app.lib.js",
-    "@project": "./src/"
+    "project": "./src/"
   }
 }
