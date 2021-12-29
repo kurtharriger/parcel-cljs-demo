@@ -88,6 +88,15 @@ yarn shadow-cljs release app
 
 Read docs for more http://doc.shadow-cljs.org/ .
 
+## Issues
+
+Using `:target :esm` in shadow-cljs will result in duplication of thirdparty npm modules in the cljs bundle.
+
+Alternatively, you can use `:target :npm-module` but I was not able to import local ts files (but you could move any shared code to a library and import from there instead).  Demo of this approach on `npm-module` branch.
+
+See feedback from shadow-cljs author on slack thread
+https://clojurians.slack.com/archives/C6N245JGG/p1640735253378600
+
 ## References 
 
 * Generating ES Modules with shadow-cljs
@@ -102,6 +111,9 @@ https://github.com/minimal-xyz/minimal-shadow-cljs-esm
 
 * Guide on using npm modules from clojurescript
 https://clojureverse.org/t/guide-on-how-to-use-import-npm-modules-packages-in-clojurescript/2298
+
+* Feedback from shadow-cljs author 
+https://clojurians.slack.com/archives/C6N245JGG/p1640735253378600
 
 ### License
 
