@@ -54,20 +54,13 @@ app.main=> (greeting \"World\")
   (println "[main] reloaded:"))
 
 
-(defn mount! []
+(defn ^:export mount! []
   (rd/render [app]
              (.getElementById js/document "app")))
 
-;; shadow-cljs.edn will run main when specified as module init-fn
-(defn main! []
-  (println "[main]: loading..." (lib/greeting "user"))
-  
-  ;(mount!)
-  )
-
-;; exports
-;; currently any esm exports must also be specified in shadow-cljs.edn
 
 (def ^:export App (r/reactify-component app))
 
+
+;(mount!)
 (ts/sayHi)
