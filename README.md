@@ -1,6 +1,8 @@
 ClojureScript in Parcel Web App
 ----
 
+
+
 This project demonstrates how to include ClojureScript in a Parcel based app.
 
 This project also demonstrates how to export and utilize ClojureScript 
@@ -11,11 +13,6 @@ Currently, you must manually start the shadow-cljs compiler as a seperate proces
 I expect that this manual step and the minimal shadow-cljs configuration can be provided by a parcel transformer.  This project is just a first step to demonstrate a workable configuration that can subsequently be automated.  
 
  https://github.com/parcel-bundler/parcel/issues/1388 
-
-
-
- 
-
 
 
 ### Develop
@@ -56,7 +53,7 @@ Server running at http://localhost:1234
 
 Now open http://localhost:1234 in your browser.
 
-![](docs/screenshot.png)
+![](doc/screenshot.png)
 
 ### REPL
 
@@ -92,6 +89,16 @@ yarn shadow-cljs release app
 Read docs for more http://doc.shadow-cljs.org/ .
 
 
+# Issues
+
+Based on feedback from shadow-cljs author I tried to change this to use :js-options {:js-provider :import} to 
+avoid rebundling react.  However after this change
+I cannot import typescript code.
+
+![](doc/esm-error.png)
+
+https://clojurians.slack.com/archives/C6N245JGG/p1640735253378600
+
 ## References 
 
 * Generating ES Modules with shadow-cljs
@@ -103,6 +110,9 @@ https://github.com/parcel-bundler/parcel/issues/144
 
 * ESM demo for shadow-cljs 
 https://github.com/minimal-xyz/minimal-shadow-cljs-esm
+
+
+esm-error.png
 ### License
 
 MIT

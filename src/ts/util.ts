@@ -1,4 +1,4 @@
 
 export const sayHi = () => {
-    console.log("hi")
+    console.log("hello")
 }

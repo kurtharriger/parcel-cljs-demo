@@ -32,7 +32,7 @@
     "cljs-lib"
   ],
   "alias": {
-    "cljs-main": "./target/main.js",
-    "cljs-lib": "./target/lib.js"
+    "cljs-main": "./target/app.main.js",
+    "cljs-lib": "./target/app.lib.js"
   }
 }
