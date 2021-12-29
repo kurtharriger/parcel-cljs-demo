@@ -1,7 +1,7 @@
 
 (ns app.main
   (:require [app.lib :as lib]
-            ["esm:/src/ts/util.ts" :as ts]
+            ["project/ts/util.ts" :as ts]
             [reagent.core :as r]
             [reagent.dom :as rd]))
 
@@ -61,7 +61,7 @@ app.main=> (greeting \"World\")
 ;; shadow-cljs.edn will run main when specified as module init-fn
 (defn main! []
   (println "[main]: loading..." (lib/greeting "user"))
-  (ts/sayHi)
+  
   ;(mount!)
   )
 
@@ -69,3 +69,5 @@ app.main=> (greeting \"World\")
 ;; currently any esm exports must also be specified in shadow-cljs.edn
 
 (def ^:export App (r/reactify-component app))
+
+(ts/sayHi)

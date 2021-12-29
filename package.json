@@ -30,12 +30,9 @@
     "sakura.css": "^1.3.1",
     "shortid": "^2.2.16"
   },
-  "externals": [
-    "cljs-main",
-    "cljs-lib"
-  ],
   "alias": {
-    "cljs-main": "./target/main.js",
-    "cljs-lib": "./target/lib.js"
+    "cljs/app.main": "./target/app.main.js",
+    "cljs/app.lib": "./target/app.lib.js",
+    "project": "./src/"
   }
 }
