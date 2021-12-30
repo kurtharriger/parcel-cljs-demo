@@ -1,7 +1,7 @@
 
 (ns app.main
   (:require [app.lib :as lib]
-            ["project/ts/util.ts" :as ts]
+            ["@project/src/ts/util.ts" :as ts]
             [reagent.core :as r]
             [reagent.dom :as rd]))
 

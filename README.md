@@ -1,4 +1,4 @@
-ClojureScript in Parcel Web App
+ClojureScript Resolver for Parcel Apps
 ----
 
 
@@ -14,7 +14,7 @@ I expect that this manual step and the minimal shadow-cljs configuration can be 
  https://github.com/parcel-bundler/parcel/issues/1388 
 
 
-### Develop
+### Develop`
 
 Run in development:
 
